@@ -1,0 +1,26 @@
+Bu proje, Konya Teknik Üniversitesi'nde bitirme projesi için yapılan bir web sitesidir. Amacı, lüks araçlar için bir online satın alma platformu oluşturmaktı. Sitede 4 ana bölüm vardır: anasayfa, araç kategorileri, hakkımızda ve iletişim. Anasayfada öne çıkanlar bölümü var ve admin paneli üzerinden yönetilebilir. Kategoriler bölümü, araç türlerine göre kategorize edilmiştir. Satın almak istediğiniz aracın markası üzerinden ilerleyerek teknik, mekanik ve görüntü bilgilerine ulaşabilirsiniz. Satın alma işlemi, sanal pos kullanarak gerçekleştirilir. Siteye entegre bir admin paneli eklenmiştir. Bu panelde, opsiyonlar ayarlanabilir, öne çıkanlar bölümü düzenlenebilir ve siparişler takip edilebilir. Ayrıca, araç ekleme bölümü gibi özellikler de yer almaktadır.
+
+Bu projede kullanılan diller: PHP, HTML, CSS ve Javascript'tir.
+
+
+
+
+
+Siteyi aktif olarak görüntüleyebilmek için uWamp indirmeniz gerekmektedir. Çünkü sitenin veritabanı PhpMyAdmin üzerinden kurulmuştur ve bağlantı gerçekleşen sayfa kullanıcı adı olarak "root" ve şifre olarak da "root" olarak ayarlanmıştır. Eğer başka bir uygulama üzerinden sunucuyu açıyorsanız, bağlantı ayarlarını güncellemeniz gerekebilir. Uygulamayı indirdikten sonra, uygulama dosya dizini içerisindeki "www" klasörüne indirilen klasörü olduğu gibi aktarmanız gerekiyor. Gerekli işlemi yaptıktan sonra, localhost üzerinden PhpMyAdmin'e giriş yaparak "bessah" adında bir veritabanı oluşturmanız gerekmektedir. Veritabanı tipi olarak da UTF-8-Turkish-ci olmasına dikkat etmeniz gerekmektedir. Ardından, içe aktar kısmından www klasörü içerisindeki 'bessah' adlı SQL uzantılı belgeyi seçerek içe aktarın. Sonrasında URL'ye localhost/bessah/index.html olarak girerseniz, siteyi aktif olarak kullanmaya başlayabilirsiniz.
+
+Uygulama linki: https://www.uwamp.com/en/?page=download
+
+
+
+
+
+This project is a website created for the final project of Konya Technical University. Its aim was to create an online shopping platform for luxury vehicles. There are 4 main sections on the site: home page, vehicle categories, about us, and contact. There is a featured section on the homepage that can be managed via the admin panel. The categories section is categorized according to vehicle types. You can access technical, mechanical, and visual information by progressing through the brand of the vehicle you want to purchase. The purchase process is carried out using a virtual POS. An admin panel has been integrated into the site. In this panel, options can be adjusted, the featured section can be edited, and orders can be tracked. Additionally, features such as the vehicle addition section are included.
+
+Languages used in this project are PHP, HTML, CSS, and JavaScript.
+
+
+
+
+To view the site actively, you need to download uWamp. Because the site's database is installed via PhpMyAdmin, the connected page is set to "root" as the username and "root" as the password. If you are opening the server via another application, you may need to update the connection settings. After downloading the application, you need to transfer the downloaded folder as it is to the "www" folder in the application file directory. After the necessary process, you need to log in to PhpMyAdmin via localhost and create a database named "bessah". Please pay attention that the database type should be UTF-8-Turkish-ci. Then, select the SQL document named 'bessah' in the www folder and import it via the import section. After that, if you enter the URL as localhost/bessah/index.html, you can start using the site actively.
+
+Application link: https://www.uwamp.com/en/?page=download

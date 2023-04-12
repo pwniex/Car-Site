@@ -1,0 +1,705 @@
+/* ------------------------MODEL SAYFASI------------------------ */
+/* MODEL*/
+.coll5{
+  width: 250px;
+  margin:45px;
+}
+.modelContainer {
+    position: relative;
+    width: 250px;
+    height: 200px;
+
+}
+.imageOver11 {
+    display: block;
+    width: 100%;
+    height: auto;}
+.modelText {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modelOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s; ease;
+    cursor: pointer;
+}
+
+.modelContainer:hover .modelOverlay {
+    width: 100%;
+}
+.modelArea {
+  padding: 80px 0px;
+}
+.modelTop {
+    text-align: center;
+}
+.modelHeader {
+  background: #8b0000;
+  border-bottom: 6 px solid #000; /* başlık bölümü ayarları */
+  height: 60px; /* yükseklik */
+  color: #fff;
+  display: inline-block;
+  line-height: 60px; /* yazının alana ortalanması yükseklik açısından */
+  font-size: 24px;
+  padding: 5px 40px; /* aşağıdan yukarı 5 px sağdan sola 40 px boyutlandırma */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.container1 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.model-btn{
+  text-align: center;
+}
+/* MODEL*/
+
+/* Marka*/
+.marka{
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* yazılar sütun şeklinde olsun */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+
+}
+.markayazi{
+  width: 1278px;
+  height: 500px;
+  background-color: rgba(0,0,0,0.1);
+  color: #fff;
+  font-size: 50px;
+  cursor: default;
+  border: none;
+}
+
+#mainMarka {
+  height: 500px;
+}
+
+/* Marka*/
+
+
+
+/* SLİDER */
+.slider-model{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  overflow:hidden;
+  margin: auto;
+
+
+}
+
+.slider-item-model img{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+.slider-content-model{
+  position: absolute;
+  width: 500%;
+  left:0;
+  animation: slide-model  40s infinite;
+
+}
+.slider-item-model{
+  width: 20%;
+  float: left;
+
+
+}
+
+@keyframes slide-model{
+  0%{
+    transform:translateX(0%);
+  }
+  5%{
+    transform:translateX(0%);
+  }
+  10%{
+    transform:translateX(0%);
+  }
+  15%{
+    transform:translateX(-20%);
+  }
+  20%{
+    transform:translateX(-20%);
+  }
+  25%{
+    transform:translateX(-20%);
+  }
+  30%{
+    transform:translateX(-40%);
+  }
+  35%{
+    transform:translateX(-40%);
+  }
+ 
+  40%{
+    transform:translateX(-40%);
+  }
+  45%{
+    transform:translateX(-60%);
+  }
+  50%{
+    transform:translateX(-60%);
+  }
+  55%{
+    transform:translateX(-60%);
+  }
+  60%{
+    transform:translateX(-80%);
+  }
+  65%{
+    transform:translateX(-80%);
+  }
+  70%{
+    transform:translateX(-80%);
+  }
+  75%{
+    transform:translateX(0%);
+  }
+  80%{
+    transform:translateX(0%);
+  }
+  85%{
+    transform:translateX(0%);
+  }
+
+}
+
+
+
+
+/* SLİDER */
+/* ------------------------MODEL SAYFASI------------------------ */
+
+/* ------------------------MODELLER SAYFASI--------------------- */
+/* MODEL*/
+
+
+.modellerFoto {
+  position: relative; /* kendi kendine alan yaratma */
+  overflow: hidden;
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+}
+
+.modellerFoto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .5s ease; /* tüm zoom özelliğini .5s boyutunda büyüt */
+}
+
+.modellerText a {
+  text-decoration: none;
+  color: #8b0000;
+}
+
+.modellerFoto .modellerText {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #8b0000;
+
+}
+
+.modellerİtem:hover .modellerFoto img{
+  transform: scale(1.05); /* 1.25 oranında fotoğraf büyütme */
+}
+
+.modellerİtem:hover a {
+  color: #fff;
+}
+
+.modellerİtem:hover .modellerText{
+  background: #8b0000;
+  color: #fff;
+  transition: all .5s ease;
+  width: 150px;
+  height: 90px;
+}
+
+
+.colll5{
+  width: 150px;
+  height: 150px;
+  margin:40px;
+  margin-bottom: 60px;
+}
+.modellerContainer {
+    position: relative;
+    width: 100%;
+}
+.imageOver111 {
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+.modellerText {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+}
+.modellerArea {
+  padding: 80px 0px;
+}
+.modellerTop {
+    text-align: center;
+}
+.modellerHeader {
+  background: #8b0000;
+  border-bottom: 6 px solid #000; /* başlık bölümü ayarları */
+  height: 60px; /* yükseklik */
+  color: #fff;
+  display: inline-block;
+  line-height: 60px; /* yazının alana ortalanması yükseklik açısından */
+  font-size: 24px;
+  padding: 5px 40px; /* aşağıdan yukarı 5 px sağdan sola 40 px boyutlandırma */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* MODEL*/
+
+/* ------------------------MODELLER SAYFASI--------------------- */
+
+.slider-ana1{
+  position: relative;
+  height: 500px;
+  width: 1310px;
+  overflow:hidden;
+  margin: auto;
+
+}
+
+.slider-item-ana1 img{
+  position: relative;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+
+}
+.slider-content-ana1{
+  position: absolute;
+  width: 500%;
+  left:0;
+
+}
+.slider-item-ana1{
+  width: 20%;
+  float: left;
+
+}
+/*------------------------------------TANITIM SAYFASI---------------*/
+.gosteri{
+  position: relative;
+  width: 95%;
+  height: 600px;
+  margin:auto;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.gosfoto img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.gosfoto{
+  width: 60%;
+  height:600px;
+  float: left;
+  margin-right: 100px;
+}
+.gosyazi{
+  width: 30%;
+  height:600px;
+  float: right;
+}
+
+.gosfoto1 img{
+position: absolute;
+
+      right; 0px;
+
+  object-fit: cover;
+   transition: all .5s ease; /* tüm zoom özelliğini .5s boyutunda büyüt */
+}
+.gosfoto1{
+  width: 60%;
+  height:600px;
+  float: right;
+}
+.gosyazi1{
+  width: 30%;
+  height:600px;
+  float: left;
+}
+.gosfoto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .8s ease; /* tüm zoom özelliğini .5s boyutunda büyüt */
+}
+
+.gosfoto:hover img{
+  transform: scale(1.03); /* 1.25 oranında fotoğraf büyütme */
+}
+
+a:hover .gosfoto img{
+  transform: scale(1.03); /* 1.25 oranında fotoğraf büyütme */
+}
+.gosfoto1:hover img{
+  transform: scale(1.03); /* 1.25 oranında fotoğraf büyütme */
+}
+
+.tanitimyazi:hover{
+   color: #c1c1c1;
+}
+
+.tanitimyazi{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+/*MODEL KEŞFET BUTONU*/
+.buttonkesfet{
+  background-color: #8b0000;
+  border: none;
+  color: white;
+  padding: 4px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.buttonkesfet:hover{
+  background-color: #fff;
+  color: #8b0000;
+  transition: 0.7s;
+  /*MODEL KEŞFET BUTONU*/
+}
+
+
+.gosfoto {
+  width: 60%;
+  height:600px;
+  float: left;
+  margin-right: 100px;
+}
+
+
+
+
+
+}
+/*------------------------------------TANITIM SAYFASI---------------*/
+
+/*------------------------------------GAleri SAYFASI---------------*/
+.kategoriler{
+  width: 100%;
+  height: 600px;
+}
+
+.kategori{
+  position: relative;
+  width: 250px;
+  height: 200px;
+  float: left;
+  margin:50px;
+  margin-left: 50px;
+}
+
+
+.kategoriText {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.kategoriOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s; ease;
+    cursor: pointer;
+}
+
+.kategori:hover .kategoriOverlay {
+ width: 100%;
+ cursor: default;
+
+}
+/*------------------------------------GAleri SAYFASI---------------*/
+
+/* Sabit Fotoğraf Modeller ve model */
+.sabitfoto-model{
+  position: relative;
+  height: 500px;
+  overflow:hidden;
+  margin: auto;
+
+
+}
+
+.sabitfoto-item-model img{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+.sabitfoto-content-model{
+  position: absolute;
+  width: 500%;
+  left:0;
+
+}
+.sabitfoto-item-model{
+  width: 20%;
+  float: left;
+
+
+}
+
+/* Sabit Fotoğraf Modeller ve model */
+/* Profil */
+.profilfoto-model{
+  position: relative;
+  height: 500px;
+  width: 1310px;
+  overflow:hidden;
+  margin: auto;
+
+
+}
+
+.profilfoto-model img{
+  object-fit: cover;
+  width: 100%;
+  height:500px;
+}
+
+
+
+.profilx{
+  text-align: center;
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  left: 50px;
+  top: 300px;
+    background-color:#000;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    width: 200px;
+    height: 150px;
+  
+    
+}
+
+.profily{
+  position: absolute;
+  left:255px;
+  top: 300px;
+    background-color:#000;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    width: 200px;
+    height: 150px;
+    
+}
+.profilx h6 {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.profilx h5 {
+  text-align: center;
+  
+  font-size: 30px;
+  color: #005fbf;
+  
+}
+.profily h6 {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.profily h5 {
+  text-align: center;
+  font-size: 30px;
+  color: #005fbf;
+}
+.vr {
+  border-left: 5px solid #ccc;
+  height: 150px;
+  position: absolute;
+  left: 250px;
+  top: 300px;
+}
+
+.opsiyonsecili{
+  float: left;
+  font-size: 20px;
+  margin-left:6%;
+  width: 20%;
+}
+
+.opsiyonsecili1{
+  float: left;
+  font-size: 20px;
+  margin-left:6%;
+  width: 20%;
+  color:red;
+}
+
+.containerbttnn {
+  width: 90%;
+}
+
+.col7bttnn {
+  position: absolute;
+  left: 5%;
+}
+
+.col7bttnn h5{
+  position: relative;
+}
+
+.containerbttnn2 {
+  width: 90%;
+  display: flex;
+}
+
+.col7bttnn2 {
+  position: absolute; 
+  left: 30%;
+  top:5%;
+}
+
+.col7bttnn2 h5{
+  position: relative;
+}
+.containerbttnn22 {
+  width: 90%;
+  display: flex;
+}
+
+.col7bttnn22 {
+  position: absolute; 
+  left: 50%;
+  top:5%;
+}
+
+.col7bttnn22 h5{
+  position: relative;
+}
+
+.USA2{
+  position: relative;
+  margin-left: 80%;
+  margin-top:-2%;
+}
+.buttonFiyat2{
+  position: relative;
+
+
+  background-color: #111;
+
+  border: 2px solid #8b0000;
+
+  color: #fff;
+
+  padding: 6px 50px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 14px;
+
+  margin: 4px 2px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+
+.buttonFiyat2:hover{
+  background-color: #191919;
+  color: #fff;
+}
+
+.container2bttnn {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.col50 {
+  flex-grow: 1; /* sütun uzunluğunu birbirlerine eşitlemek için */
+  width: 25%;
+}
+
+.col50 label {
+  flex-grow: 1; /* sütun uzunluğunu birbirlerine eşitlemek için */
+  width: 25%;
+}

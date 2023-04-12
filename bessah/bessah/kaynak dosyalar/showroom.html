@@ -1,0 +1,210 @@
+<!-- HEADER -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Luxury Car">
+    <meta name="author" content="KTUN_P6">
+    <meta name="keywords" content="html, css">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0"> 
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>Bessah - Showroom</title>
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/766f3d27dc.js" crossorigin="anonymous"></script>
+
+
+<!-- AÇILIR MENÜ CSS İ -->
+<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #8b0000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    
+
+
+</head>
+<body>
+
+<!-- AÇILIR MENÜ -->
+
+<div id="YanMenu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+  &times;</a>
+
+  <p align="center"><font size="5">KATEGORİLER</font></p>
+  <br>
+  <a href="#">Sedan</a>
+  <a href="#">SUV</a>
+  <a href="#">Offroad</a>
+  <a href="#">Elektrikli</a>
+
+  <hr width="90%" color="#000">
+  <br>
+  <p align="center"><font size="5">FİLTRELEME</font></p>
+  <br>
+
+  <a href="#">Renk</a>
+  <a href="#">Yıl</a>
+  <a href="#">Vites </a>
+  <a href="#">Motor Hacmi</a>
+  <a href="#">Kapı</a>
+  <a href="#">Çekiş</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer;color:#8b0000" onclick="openNav()">
+
+  &#9776; </span>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("YanMenu").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0.7)";
+}
+
+function closeNav() {
+  document.getElementById("YanMenu").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#111";
+}
+</script>
+
+
+
+<header>
+    
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+            <div class="order">
+                <ul class="menu cf">
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li>
+                        <a href="showroom.html">Showroomlar</a>
+                            <ul class="submenu">
+                                <li><a href="ankara.html">Ankara Showroom</a></li>
+                                <li><a href="istanbul.html">İstanbul Showroom</a></li>
+                                <li><a href="konya.html">Konya <br>Showroom</a></li>
+                            </ul>          
+                    </li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>    
+            </div>
+            <div class="aramaKutusu">
+                <input id="arama" type="search" placeholder="arama">
+                    <label for="arama"><li><i class="fas fa-search"></i></li></label>
+    </div>
+
+</header>
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+        <footer class="sectionArea">
+            <div class="container">
+                <div class="col3">
+                    <div class="footerItem">
+                        <h3>Sitemize Hoşgeldiniz</h3>
+                        <br>
+                        
+                        <a href="index.html"><img src="img/logo2.png"></a>
+                        <br>
+                        <br>
+                        
+                        <p>Yüksek hizmet kalitesi, işini bilen personeller ile hayalinizdeki araca doğru erişim ve güvenilir alışveriş için doğru adrestesiniz.</p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footerItem">
+                        <h3>Alt Menü</h3>
+                        <br>
+                        <ul class="footerLinks">
+                            <li><a href="index.html">ANASAYFA</a></li>
+                            <li><a href="showroom.html">Showroomlar</a></li>
+                            <li><a href="hakkimizda.html">Hakkımızda</a>
+                            </li>
+                            <li><a href="iletisim.html">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footerItem">
+                        <h3>Sosyal Medya</h3>
+                        <ul class="socialLinks">
+                            <br>
+                            <li><a href="https://twitter.com/Bessah14860056"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/bessah.bessah.501/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/bessah-bessah-a94a6320b/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+</div>
+
+</body>
+</html>

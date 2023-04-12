@@ -1,0 +1,717 @@
+/* GENEL AYARI */
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonst/Raleway-Regular.ttf'); /* font tanıtma */
+}
+
+body {
+	background: #111; /* Arka plan rengi */
+	color: #fff; /* Yazı rengi */
+	font: 14px / 28px arial; /* Yazı boyutu  / yedek font*/
+	font-family: 'Raleway'; /* Yazı tipi */
+}
+
+.sectionHeader {
+	background: #8b0000;
+	border-bottom: 6 px solid #000; /* başlık bölümü ayarları */
+	height: 60px; /* yükseklik */
+	color: #fff;
+	display: inline-block;
+	line-height: 60px; /* yazının alana ortalanması yükseklik açısından */
+	font-size: 24px;
+	padding: 5px 40px; /* aşağıdan yukarı 5 px sağdan sola 40 px boyutlandırma */
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+.sectionHeader a {
+  text-decoration: none;
+  color: white;
+}
+
+.sectionHeader a:hover{
+  color: #000;
+}
+
+h3 {
+	font-size: 16px;
+	color: #8b0000;
+	font-weight: bold;
+	transition: all .5s ease;
+}
+
+.sectionArea {
+	padding: 80px 0px;
+}
+
+/* CONTAİNER AYARLARI */
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+
+h1 {
+	font-size: 52px;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+
+.previewBody .container {
+	justify-content: space-between; /* resimler arası boşluğun eşitlenmesi için */
+}
+
+.col3 {
+	flex-grow: 1; /* sütun uzunluğunu birbirlerine eşitlemek için */
+	width: 33.33%;
+}
+
+.kategoriBody .container {
+    justify-content: space-between;
+}
+
+.col4 {
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+/* ANASAYFA AYARLARI */
+
+header .logo {
+	margin-right: auto; /* logo alanındaki sağ taraf boşluğunu otamatik ayarladı */
+}
+
+header .logo img {
+	display: block;
+	height: 70px; /* yükseklik */
+
+}
+
+
+
+
+
+
+
+/* ANASAYFA "Menü" AYARLARI */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+ 
+.cf:after {
+  clear: both;
+}
+ 
+.cf {
+  *zoom: 1;
+  
+}
+ 
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 10px;
+
+}
+ 
+
+.menu {			
+  margin: 5px auto;
+  position: absolute;
+  right: 0px;
+  width: 900px;
+  margin-top: 30px;
+
+
+
+}
+ 
+.menu > li {
+  background:  #111;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+ 
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Raleway, Helvetica;
+  font-size: 14px;
+}		
+ 
+.menu li:hover {
+  background: #8b0000;
+  transition: all .25s ease;
+}		
+ 
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+ 
+
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+  float: left;
+}
+
+.aramaKutusu {
+position: relative;
+top: 30px;
+}
+
+.aramaKutusu label {
+border: 1px;
+cursor: pointer;
+display: inline-block;
+font:bold 1.2em Raleway;
+margin-left: -.125em;
+padding: 11px 20px 11px 20px;
+transition: .25s;
+color:#fff;
+text-shadow:2px 2px 2px #8b0000;
+border-radius:5px;
+font-family: Raleway; 
+}
+
+
+.aramaKutusu input:hover +label{border-radius:0 5px 5px 0;}
+ 
+.aramaKutusu input:hover + label {
+background-color: #8b0000;
+}
+.aramaKutusu input {
+background-color: #111;
+color: white;
+border: 1px solid #8b0000;
+color: white;
+display: inline-block;
+font:1.2em Raleway;
+margin-right: -.25em;
+outline: 0;
+opacity: 0;
+padding: 10px;
+transition: .55s;
+-webkit-transition: .55s;
+-moz-transition: .55s;
+-ms-transition: .55s;
+-o-transition: .55s;
+width: 0;
+}
+.aramaKutusu input:hover {
+opacity: 1;
+padding-left: .75em;
+padding-right: .75em;
+width: 11em;
+border-radius:5px 0 0 5px;
+}
+
+
+.submenu li {
+  background-color:#111;
+  position: relative;
+  overflow: hidden;		
+}						
+ 
+.submenu > li > a {
+  padding: 1em 2em;	
+  float: left;		
+}
+ 
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+ 
+
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+ 
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+ 
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+ 
+
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+
+}
+ 
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+ 
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+ 
+
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+ 
+.submenu li {
+  transition: .2s ease transform;
+}
+ 
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+ 
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+ 
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+
+
+
+
+
+#mainSlider {
+	height: 500px;
+	background: url('../img/mainSlider1.jpg') center center no-repeat;
+	background-size: cover; /* görseli verilen alana sığdırma */
+}
+
+.slider {
+	width: 100%;
+}
+
+#mainCaption {
+	height: 500px;
+	background: rgba(0,0,0, .1);
+}
+
+.caption {
+	display: flex;
+	flex-direction: column; /* yazılar sütun şeklinde olsun */
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+
+}
+
+.previewTop {
+	text-align: center;
+}
+
+.item {
+	padding: 10px 20px;
+}
+
+.zoom {
+	position: relative; /* kendi kendine alan yaratma */
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.zoom img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all .5s ease; /* tüm zoom özelliğini .5s boyutunda büyüt */
+}
+
+.item .itemText {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #8b0000;
+
+}
+
+.item:hover .zoom img{
+	transform: scale(1.25); /* 1.25 oranında fotoğraf büyütme */
+}
+
+.item:hover h3 {
+	color: #fff;
+}
+
+.item:hover .itemText{
+	background: #8b0000;
+	color: #fff;
+	transition: all .5s ease;
+}
+
+.btnİncele {
+	color: #8b0000;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #8b0000;
+	transition: all .5s ease;
+}
+
+.item:hover .btnİncele {
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.itemText p {
+	margin: 20px 0;
+}
+
+#parallax {
+	background: linear-gradient(
+			rgba(0,0,0, 4),
+			rgba(0,0,0,.4)
+			),
+	url('../img/parallax.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+
+}
+
+.parallaxTop {
+	height: 300px;
+}
+
+.parallaxBtn a {
+  background-color: #8b0000;
+  cursor: pointer;
+  color: white;
+  padding: 20px 50px;
+  border: none;
+  margin-top: 20px;
+  transition: all .5s ease;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.parallaxBtn a:hover {
+  background-color: white;
+  color: #8b0000;
+}
+
+#parallax p{
+	color: #fff;
+}
+
+.kategoriTop {
+    text-align: center;
+}
+
+.kategoriContainer {
+    position: relative;
+    width: 100%;
+}
+
+.imageOver {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.kategoriOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(139,0,0, .5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s; ease;
+    cursor: pointer;
+}
+
+.kategoriContainer:hover .kategoriOverlay {
+    width: 100%;
+}
+
+.kategoriText {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kategoriOverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(139,0,0, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+        transition: .5s ease;
+    cursor: pointer;
+}
+
+
+.kategoriContainer:hover .kategoriOverlay2 {
+    width: 100%;
+    left: 0;
+}
+
+.kategoriOverlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(139,0,0, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+        transition: .5s ease;
+    cursor: pointer;
+}
+
+
+.kategoriContainer:hover .kategoriOverlay3 {
+    width: 100%;
+    left: 0;
+}
+
+.kategoriOverlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(139,0,0, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+        transition: .5s ease;
+    cursor: pointer;
+}
+
+
+.kategoriContainer:hover .kategoriOverlay4 {
+    width: 100%;
+    left: 0;
+}
+
+footer {
+    background: #8b0000;
+    text-align: center;
+}
+
+.footerItem {
+    padding: 20px;
+}
+
+.footerItem img {
+    height: 75px;
+    width: 150px;
+    
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .fa {
+    font-size: 30px;
+    color: #fff;
+    line-height: 50px;
+    transition: .3s ease;
+}
+
+footer .fa:hover {
+    color: #111;
+}
+
+footer p {
+    color: #fff;
+    line-height: 20px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+
+.footerLinks a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.socialLinks li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+
+/* HAKKIMIZDA BÖLÜMÜ */
+
+.hakkimizdaTop {
+  text-align: center;
+}
+
+.hakkimizdaBody {
+background: url('../img/hakkimizda.jpg') center center no-repeat;
+background-repeat: repeat;
+background-attachment: scroll;
+background-position: top-left;
+background-size: cover;
+
+}
+
+
+.hakkimizdaText p {
+  color: white;
+  text-align: left;
+  padding: 50px;
+  text-decoration: none;
+  position: relative;
+overflow: hidden;
+background: rgba(0,0,0, .5);
+font-size: 20px;
+}
+
+.hakkimizdaText p a {
+  text-decoration: none;
+  color: white;
+  }
+
+.hakkimizdaText p a:hover {
+  color: #8b0000;
+}
+
+/* İLETİŞİM BÖLÜMÜ */
+
+/* navigasyon bölümü */
+
+.navigasyonTop{
+    text-align: center;
+}
+
+.iletisimItem a {
+  text-decoration: none;
+  color: #2d7739;
+}
+
+
+/* personel bölümü */
+
+
+.personelTop {
+  text-align: center;
+}
+
+.personelBody .containerFuild {
+  display: flex;
+  width: 100%;
+}
+
+.personelMember {
+  position: relative;
+  width: 100%;
+}
+
+.personelMemberFoto {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.personelMemberOverley {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: #8b0000;
+  transition: .5s ease;
+}
+
+.personelMember:hover .personelMemberOverley {
+  opacity: 0;
+}
+
+.personelMember:hover .personelMemberInfo {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.personelTitle {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.personelMemberInfo {
+  color: white;
+  background-color: rgba(139, 0, 0, .5);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s ease;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+}
+
+.memberSocialLinks {
+  text-align: center;
+}
+
+.memberSocialLinks li {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.memberSocialLinks .fa {
+  color: white;
+}
